@@ -1,0 +1,9 @@
+C:\Users\Faby\documents\visual studio 2015\Projects\SteamDLPauser\SteamDLPauser\bin\Release\SteamDLPauser.exe.config
+C:\Users\Faby\documents\visual studio 2015\Projects\SteamDLPauser\SteamDLPauser\bin\Release\SteamDLPauser.exe
+C:\Users\Faby\documents\visual studio 2015\Projects\SteamDLPauser\SteamDLPauser\bin\Release\SteamDLPauser.pdb
+C:\Users\Faby\documents\visual studio 2015\Projects\SteamDLPauser\SteamDLPauser\obj\Release\SteamDLPauser.Form1.resources
+C:\Users\Faby\documents\visual studio 2015\Projects\SteamDLPauser\SteamDLPauser\obj\Release\SteamDLPauser.Form2.resources
+C:\Users\Faby\documents\visual studio 2015\Projects\SteamDLPauser\SteamDLPauser\obj\Release\SteamDLPauser.Properties.Resources.resources
+C:\Users\Faby\documents\visual studio 2015\Projects\SteamDLPauser\SteamDLPauser\obj\Release\SteamDLPauser.csproj.GenerateResource.Cache
+C:\Users\Faby\documents\visual studio 2015\Projects\SteamDLPauser\SteamDLPauser\obj\Release\SteamDLPauser.exe
+C:\Users\Faby\documents\visual studio 2015\Projects\SteamDLPauser\SteamDLPauser\obj\Release\SteamDLPauser.pdb

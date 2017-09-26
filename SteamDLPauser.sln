@@ -3,7 +3,12 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SteamDLPasuer", "SteamDLPasuer\SteamDLPasuer.csproj", "{926ED58E-71F4-44CA-A338-B052A986246A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SteamDLPauser", "SteamDLPauser\SteamDLPauser.csproj", "{926ED58E-71F4-44CA-A338-B052A986246A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{B20D7943-E216-4602-A556-F585014AC638} = {B20D7943-E216-4602-A556-F585014AC638}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SteamDummy", "SteamDummy\SteamDummy.csproj", "{B20D7943-E216-4602-A556-F585014AC638}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +20,10 @@ Global
 		{926ED58E-71F4-44CA-A338-B052A986246A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{926ED58E-71F4-44CA-A338-B052A986246A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{926ED58E-71F4-44CA-A338-B052A986246A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B20D7943-E216-4602-A556-F585014AC638}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B20D7943-E216-4602-A556-F585014AC638}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B20D7943-E216-4602-A556-F585014AC638}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B20D7943-E216-4602-A556-F585014AC638}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
