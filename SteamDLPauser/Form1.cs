@@ -17,6 +17,7 @@ namespace SteamDLPauser
         public Form1()
         {
             InitializeComponent();
+
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -25,9 +26,7 @@ namespace SteamDLPauser
         }
 
         private void timer1_Tick(object sender, EventArgs e)
-        {
-
-           
+        {       
 
             bool dummyActive = false;
             bool processActive = false;
@@ -39,11 +38,27 @@ namespace SteamDLPauser
             }
             foreach (List<string> item in gList)
             {
+                   
                 System.Diagnostics.Process[] listitem = System.Diagnostics.Process.GetProcessesByName(item[1]);
                 if (listitem.Length > 0)
                 {
+                    bool windowMatch = false;
+                    if( item[2] == "")
+                    {
+                        windowMatch = true;
+                    } else
+                    {
+                        foreach (System.Diagnostics.Process pitem in listitem)
+                        {
+                            if (pitem.MainWindowTitle == item[2])
+                            {
+                                windowMatch = true;
+                            }
+                        }
+                    }
+
                     processActive = true;
-                    if (dummyActive == false)
+                    if (dummyActive == false && windowMatch) 
                     {
                         try
                         {
@@ -91,6 +106,7 @@ namespace SteamDLPauser
             {
                 var titem = new ListViewItem(item[0]);
                 titem.SubItems.Add(item[1]);
+                titem.SubItems.Add(item[2]);
                 listView1.Items.Add(titem);
             }
             listView1.EndUpdate();
@@ -122,6 +138,13 @@ namespace SteamDLPauser
                 tsllist.Add(tslist);
             }
             gList = tsllist.ToList();
+            foreach (List<string> item in gList)
+            {
+                if (item.Count < 3)
+                {
+                    item.Add("");
+                }
+            }
             updateItems();
         }
         private void saveItems()
@@ -139,6 +162,7 @@ namespace SteamDLPauser
                 List<string> item = new List<string>();
                 item.Add(textBox1.Text);
                 item.Add(comboBox1.Text);
+                item.Add(comboBox2.Text);
                 gList.Add(item);
                 saveItems();
                 updateItems();
@@ -207,7 +231,23 @@ namespace SteamDLPauser
 
         private void comboBox1_KeyDown(object sender, KeyEventArgs e)
         {
-            if(e.KeyCode == Keys.Enter)
+            if (e.KeyCode == Keys.Enter)
+            {
+
+                button1_Click(sender, e);
+            }
+        }
+
+        private void comboBox2_DropDown(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process[] plist = System.Diagnostics.Process.GetProcessesByName(comboBox1.Text);
+            comboBox2.Items.Clear();
+            comboBox2.Items.AddRange(plist.Select(p => p.MainWindowTitle).Distinct().ToArray());
+        }
+
+        private void comboBox2_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
             {
 
                 button1_Click(sender, e);

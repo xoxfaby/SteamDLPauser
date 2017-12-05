@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem7 = new System.Windows.Forms.ListViewItem(new string[] {
             "steam://rungameid/9537180463706144768",
             "League of Legends",
             "0"}, -1);
-            System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem8 = new System.Windows.Forms.ListViewItem(new string[] {
             "steam://rungameid/17144940362498834432",
             "notepad"}, -1);
             this.listView1 = new System.Windows.Forms.ListView();
@@ -48,19 +48,22 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
+            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // listView1
             // 
             this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader1,
-            this.columnHeader2});
+            this.columnHeader2,
+            this.columnHeader3});
             this.listView1.GridLines = true;
             this.listView1.HideSelection = false;
             this.listView1.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem1,
-            listViewItem2});
-            this.listView1.Location = new System.Drawing.Point(12, 38);
+            listViewItem7,
+            listViewItem8});
+            this.listView1.Location = new System.Drawing.Point(12, 39);
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(391, 358);
             this.listView1.TabIndex = 1;
@@ -70,19 +73,19 @@
             // columnHeader1
             // 
             this.columnHeader1.Text = "SteamShortcut";
-            this.columnHeader1.Width = 229;
+            this.columnHeader1.Width = 201;
             // 
             // columnHeader2
             // 
             this.columnHeader2.Text = "ProcessName";
-            this.columnHeader2.Width = 173;
+            this.columnHeader2.Width = 100;
             // 
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(245, 12);
+            this.comboBox1.Location = new System.Drawing.Point(219, 12);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(158, 21);
+            this.comboBox1.Size = new System.Drawing.Size(92, 21);
             this.comboBox1.TabIndex = 4;
             this.comboBox1.DropDown += new System.EventHandler(this.comboBox1_DropDown);
             this.comboBox1.Enter += new System.EventHandler(this.comboBox1_Enter);
@@ -142,7 +145,7 @@
             // 
             this.textBox1.Location = new System.Drawing.Point(12, 12);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(227, 20);
+            this.textBox1.Size = new System.Drawing.Size(201, 20);
             this.textBox1.TabIndex = 11;
             // 
             // timer1
@@ -156,11 +159,30 @@
             this.notifyIcon1.Text = "notifyIcon1";
             this.notifyIcon1.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.notifyIcon1_MouseDoubleClick);
             // 
+            // columnHeader3
+            // 
+            this.columnHeader3.Text = "WindowTitle";
+            this.columnHeader3.Width = 86;
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            "Window",
+            "Process"});
+            this.comboBox2.Location = new System.Drawing.Point(317, 12);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(86, 21);
+            this.comboBox2.TabIndex = 12;
+            this.comboBox2.DropDown += new System.EventHandler(this.comboBox2_DropDown);
+            this.comboBox2.KeyDown += new System.Windows.Forms.KeyEventHandler(this.comboBox2_KeyDown);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(496, 408);
+            this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
@@ -194,6 +216,8 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.NotifyIcon notifyIcon1;
+        private System.Windows.Forms.ColumnHeader columnHeader3;
+        private System.Windows.Forms.ComboBox comboBox2;
     }
 }
 

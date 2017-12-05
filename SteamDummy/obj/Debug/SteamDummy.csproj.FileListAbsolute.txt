@@ -7,3 +7,12 @@ c:\users\faby\documents\visual studio 2015\Projects\SteamDummy\SteamDummy\obj\De
 c:\users\faby\documents\visual studio 2015\Projects\SteamDummy\SteamDummy\obj\Debug\SteamDummy.csproj.GenerateResource.Cache
 c:\users\faby\documents\visual studio 2015\Projects\SteamDummy\SteamDummy\obj\Debug\SteamDummy.exe
 c:\users\faby\documents\visual studio 2015\Projects\SteamDummy\SteamDummy\obj\Debug\SteamDummy.pdb
+C:\Users\Faby\documents\visual studio 2015\Projects\SteamDLPauser\SteamDummy\bin\Debug\SteamDummy.exe.config
+C:\Users\Faby\documents\visual studio 2015\Projects\SteamDLPauser\SteamDummy\bin\Debug\SteamDummy.exe
+C:\Users\Faby\documents\visual studio 2015\Projects\SteamDLPauser\SteamDummy\bin\Debug\SteamDummy.pdb
+C:\Users\Faby\documents\visual studio 2015\Projects\SteamDLPauser\SteamDummy\obj\Debug\SteamDummy.csprojResolveAssemblyReference.cache
+C:\Users\Faby\documents\visual studio 2015\Projects\SteamDLPauser\SteamDummy\obj\Debug\SteamDummy.Form1.resources
+C:\Users\Faby\documents\visual studio 2015\Projects\SteamDLPauser\SteamDummy\obj\Debug\SteamDummy.Properties.Resources.resources
+C:\Users\Faby\documents\visual studio 2015\Projects\SteamDLPauser\SteamDummy\obj\Debug\SteamDummy.csproj.GenerateResource.Cache
+C:\Users\Faby\documents\visual studio 2015\Projects\SteamDLPauser\SteamDummy\obj\Debug\SteamDummy.exe
+C:\Users\Faby\documents\visual studio 2015\Projects\SteamDLPauser\SteamDummy\obj\Debug\SteamDummy.pdb

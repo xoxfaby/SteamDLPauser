@@ -14,3 +14,4 @@ C:\Users\Faby\documents\visual studio 2015\Projects\SteamDLPauser\SteamDummy\obj
 C:\Users\Faby\documents\visual studio 2015\Projects\SteamDLPauser\SteamDummy\obj\Release\SteamDummy.csproj.GenerateResource.Cache
 C:\Users\Faby\documents\visual studio 2015\Projects\SteamDLPauser\SteamDummy\obj\Release\SteamDummy.exe
 C:\Users\Faby\documents\visual studio 2015\Projects\SteamDLPauser\SteamDummy\obj\Release\SteamDummy.pdb
+C:\Users\Faby\documents\visual studio 2015\Projects\SteamDLPauser\SteamDummy\obj\Release\SteamDummy.csprojResolveAssemblyReference.cache
